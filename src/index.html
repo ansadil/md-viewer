@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MD-Vi</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <div id="toolbar">
+        <button id="open-btn" title="Open Markdown File (Ctrl+O)">Open File</button>
+        <span id="filename"></span>
+      </div>
+      <div id="drop-zone">
+        <div id="empty-state">
+          <p>Drop a .md file here</p>
+          <p class="sub">or click <strong>Open File</strong> to browse</p>
+        </div>
+      </div>
+      <div id="content" class="markdown-body" style="display:none;"></div>
+    </div>
+  </body>
+</html>
